@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  python:
+    build:
+      dockerfile: Dockerfile
+    restart: 'no'
+    volumes:
+      - ..:/workspace:cached
+      - ~/.ssh:/home/vscode/.ssh:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"

@@ -1,0 +1,15 @@
+{
+	"name": "Python 3",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "python",
+	"workspaceFolder": "/workspace",
+	"settings": {},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"ms-python.black-formatter"
+	],
+	"remoteUser": "vscode",
+	"postStartCommand": "pip install --no-cache-dir -r requirements.txt",
+	"shutdownAction": "stopCompose"
+}
